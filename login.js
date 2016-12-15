@@ -5,8 +5,7 @@ function setUser(){
 	setRandom = Math.round(Math.random()*Math.random()*Math.random()*Math.random()*Math.random()*10000000);
 	
 	userGlobal = $("#User").val();
-	console.log($("#User").val());
-	if(userGlobal === undefined){userGlobal = "Anon" + setRandom;}
+	if(userGlobal === undefined || userGlobal == ""){userGlobal = "Anon" + setRandom;}
 	
 	$("#skippy1").empty();
 	$("#skippy1").append('<div class="col-xs-12"><h3 class="subtitle">Start Typing...</h3><textarea id="IO" class="col-xs-9"></textarea></div>');
