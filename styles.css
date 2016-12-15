@@ -1,0 +1,93 @@
+@font-face{
+	font-family: Arcade;
+	src: url(Arcade.ttf);
+}
+
+@font-face{
+	font-family: Digital;
+	src: url(Digital.ttf);
+}
+
+.container{
+	overflow: hidden;
+}
+
+.row{
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+}
+
+.Title{
+	font-family: Digital;
+}
+
+.subtitle{
+	font-family: Arcade;
+}
+
+.rule{
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#App{
+	text-align: center;
+}
+
+#User{
+	padding: 5px;
+	border: black solid 5px;
+	border-radius: 9px;
+	height: 35px;
+	width: 100%;
+	margin-top: 20px;
+	text-align: left;
+	resize: none;
+}
+
+#IO{
+	padding: 5px;
+	border: black solid 5px;
+	border-radius: 9px;
+	height: 70px;
+	width: 100%;
+	margin-top: 20px;
+	text-align: left;
+	overflow-y:scroll;
+	resize: none;
+}
+
+#Module{
+	border: black solid 5px;
+	border-radius: 9px;
+	height: 200px;
+	overflow-y: scroll;
+	text-align: left;
+}
+
+#sendButton{
+	background-color: #555555;
+	border-radius: 8px;
+	color: white;
+	margin-top: 20px;
+	float: right;
+	width: 100%;
+}
+
+#userButton{
+	background-color: #555555;
+	border-radius: 8px;
+	color: white;
+	margin-top: 20px;
+	float: right;
+	width: 100%;
+}
+
+#oneHunnid{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: none;
+}
