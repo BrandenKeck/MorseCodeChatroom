@@ -5,11 +5,9 @@ $(function(){
 	root.on("child_added", snap => {
 		var addMe = snap.val();
 		$("#Module").append("<b>"+ addMe.User +": &nbsp &nbsp </b>" + addMe.Message + "<br />");
-	});
-	
-	setInterval(function(){
 		$("#Module").scrollTop($("#Module")[0].scrollHeight);
-	}, 1000);
+	});
+
 });
 
 function send(){

@@ -60,12 +60,14 @@ function createEventListeners(){
 		  if(morseDict[i][0] == e.which){
 			  code.push(morseDict[i][2]+"   ");
 			  buildMe();
+			  $("#IO").scrollTop($("#IO")[0].scrollHeight);
 		  }
 		}
 		
 		if(e.which == 8){
 			code.pop();
 			buildMe();
+			$("#IO").scrollTop($("#IO")[0].scrollHeight);
 		}
 	});
 }
