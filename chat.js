@@ -13,12 +13,16 @@ $(function(){
 function send(){
 	var root = firebase.database().ref();
 	
+	if(buildCode == undefined){buildCode = translateMobileQuery();}
 	var object = {"User": userGlobal, "Message": buildCode};
-	root.push().set(object);
+	
+	if(buildCode != "" && buildCode != undefined){
+		root.push().set(object);
+	}
 	
 	$("#sendButton").blur();
-	$("#IO").val(' ');
+	$("#IO").val('');
 	$("#IO").focus();
-	buildCode="";
+	buildCode=undefined;
 	code = [];
 }

@@ -48,13 +48,11 @@ var morseDict = [[65, "A","*-"],
 
 function createEventListeners(){
 	document.addEventListener("keydown", function(e) {
+		e.preventDefault();
+					
 		if(e.keyCode === 13){
 			send();
 		}
-		
-		document.addEventListener("keypress", function(e) {
-			e.preventDefault();
-	}	);
 		
 		for(var i=0; i<morseDict.length; i++){
 		  if(morseDict[i][0] == e.which){
@@ -70,6 +68,31 @@ function createEventListeners(){
 			$("#IO").scrollTop($("#IO")[0].scrollHeight);
 		}
 	});
+}
+
+function translateMobileQuery(){
+	var breakdown = $("#IO").val();
+	var array = breakdown.split('');
+	var rebuilt = "";
+	
+	for(var i=0; i<array.length; i++){
+		for(var j=0; j<morseDict.length; j++){
+			if(array[i] == morseDict[j][2]){
+				rebuilt += morseDict[j][2];
+				rebuilt += "  ";
+				break;
+			}
+			else if(array[i].toUpperCase() == morseDict[j][1]){
+				rebuilt += morseDict[j][2];
+				rebuilt += "  ";
+				break;
+			}
+		}
+	}
+	
+	if(rebuilt == ""){rebuilt = "[error]";}
+	
+	return rebuilt;
 }
 
 function buildMe(){
