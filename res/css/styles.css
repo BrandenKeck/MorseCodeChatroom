@@ -1,11 +1,11 @@
 @font-face{
 	font-family: Arcade;
-	src: url(Arcade.ttf);
+	src: url(../fonts/Arcade.ttf);
 }
 
 @font-face{
 	font-family: Digital;
-	src: url(Digital.ttf);
+	src: url(../fonts/Digital.ttf);
 }
 
 .container{

@@ -14,4 +14,5 @@ function setUser(){
 	$("#skippy2").append('<div class="col-xs-2 col-sm-5"></div><div class="col-xs-8 col-sm-2"><button value="Send" id="sendButton" tabIndex="-1" onclick="send()"><h6>Send</h6></Button></div><div class="col-xs-2 col-sm-5"></div>');
 	
 	createEventListeners();
+	sendLogin();
 }
