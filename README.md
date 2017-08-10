@@ -8,3 +8,7 @@ Project Link: [Click Here](http://brandenkeck.com/MorseApp/MorseCodeApp.html)
 * Choice of user name or randomly generated Anonymous tag for users (simulated "log-in" system -- username is stored as global variable that is sent to the firebase server with each user message)  
 * Changing html with jquery to simulate screen transitions  
 * Cross-Platform support (depends on browser support of javascript.  Third-party mobile browsers and mobile google chrome still incur issues with javascript functions)  
+
+# Project Screenshot
+
+![Screen Shot 1](http://brandenkeck.com/res/img/screenshot/morse_code_chatroom/mccr.jpg)
